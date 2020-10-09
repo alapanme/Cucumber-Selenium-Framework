@@ -1,7 +1,7 @@
 # Cucumber-Selenium-Framework
 - A Selenium Web driver Framework using Page Object Model with Cucumber
 
-# Some Generic description about the framework - 
+# Some Generic description about the framework: 
 - Chosen maven with cucumber and JUnit. Cucumber allows us to automate test cases in BDD format and with maven maintaining any dependencies is hassle free.
 - Created the framework for two browsers for now keeping the option to add as many browsers as we want in the future.
 - Also, Implemented two modes of testing Local & Remote. Currently we are using local testing, but in future if we decide to use any tools like Browserstack, it can be easily plugged into our framework.
@@ -10,7 +10,7 @@
 
 So, In conclusion; Cucumber understands Gherkin language, read Feature files and execute code written in Step Definition files with the help of Cucumber Options specified in TestRunner.
 
-# Details about the Framework Components (one by one) -
+# Details about the Framework Components (one by one):
 - src/main java -> dataProviders -> configFileReader - As the name suggests this is created to read all the data/configurations that are there in the properties file.
 - enums -> DriverType - Hardcoding of the driver keywords. Currently it supports chrome & opera. We can add other values in future.
 - enums -> EnvironmentType - Hardcoding of the environment type. Currently mentioned are Local & Remote. We can add other values in future.
@@ -22,9 +22,9 @@ So, In conclusion; Cucumber understands Gherkin language, read Feature files and
 - functionalTests -> FeedbackSubmissionTests.feature - This is where our BDD style Test cases are written in Gherkin language.
 - configs -> Configuration.properties - All the data is managed at a single place for the framework.
 
-# How to Run the Tests - 
+# How to Run the Tests:
 - Through CMD - Go to the Project from command prompt and use the command mvn clean test
-- Through Test Runner - Right click on Test Runner & Run As -> JUnit Tests
+- Through Test Runner - `Right click on Test Runner & Run As -> JUnit Tests`
 
-# How to Run in Multiple browsers - 
+# How to Run in Multiple browsers: 
 - So we just have to change the browser and driverpath key from the properties file. I have kept the driver files inside the project so as to prevent any extra setups to run the tests.
